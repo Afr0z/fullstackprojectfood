@@ -1,0 +1,23 @@
+<header>
+  <h1><span>AFROZ</span>  MULTI CUISINE RESTAURANT</h1>
+  <nav class="navbar">
+    <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >Home</a>
+    <a class="nav-link" routerLink="aboutt-component" routerLinkActive="active-link">About Us</a>
+    <a class="nav-link" routerLink="contactus-component" routerLinkActive="active-link">Contact Us</a>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  <div class="content">
+      <h3>Food Made With Love</h3>
+      <p>food brings people together on many different levels.our restaurant is one of the most wonderful restaurant in Shimoga.our restaurant is popular because of our most delicious food especially the chicken biriyani and manchuries.</p>
+      <h2>
+        <a class="nav-link" routerLink="speciality-component" routerLinkActive="active-link">SPECIALITY</a><br><br>
+        <a class="nav-link" routerLink="orderfood-component" routerLinkActive="active-link">VIEW DISHES</a>
+      </h2>
+  </div>
+  <div class="image">
+      <img src="../assets/images/a2.jpg" alt="">
+  </div>
+</section>
+<router-outlet></router-outlet>

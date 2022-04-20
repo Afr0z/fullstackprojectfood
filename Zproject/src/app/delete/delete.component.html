@@ -1,0 +1,17 @@
+<div class="abc" align="center">
+    <h2><span>Cancel</span> Order </h2>
+      <br><br>
+     <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+       <div class="form-group">
+       <label> Name : </label>
+       <input type="text" #name (ngModel)="name" name="name" id="name" class="form-class">
+       </div> <br>
+
+        <div class="form-group">
+          <input type="submit" value="Delete" class="btn btn-primary w-100">
+         </div>
+    </form>
+    <br><br>
+    <h4><a class="navlink" routerLink="/fetch-component">VIEW ORDER</a></h4>
+   </div>
+   <router-outlet></router-outlet>

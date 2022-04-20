@@ -1,0 +1,28 @@
+<div align="center">
+    <h2><span>Order</span> History</h2>
+    <table>
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Quantity </th>
+                <th> Phone no </th>
+                <th> Address </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let food of fooddetails">
+                <td> {{food.name}} </td>
+                <td> {{food.quantity}} </td>
+                <td> {{food.phoneno}} </td>
+                <td> {{food.address}} </td>
+            </tr>
+
+        </tbody>      
+    </table>
+    <br><br><br><br><br><br><br>
+    <h4><a class="navlink" routerLink="/update-component">UPDATE ORDER</a><br><br>
+    <a class="navlink" routerLink="/delete-component">CANCEL ORDER</a><br><br>
+    <a class="nav-link" routerLink="/orderfood-component" routerLinkActive="active-link">VIEW DISHES</a></h4><br>
+ </div>  
+ <router-outlet></router-outlet>

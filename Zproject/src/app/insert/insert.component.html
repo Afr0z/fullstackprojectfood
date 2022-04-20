@@ -1,0 +1,22 @@
+<div align="center">
+  <h2><span>Order</span> your Food</h2><br>
+  
+  <form #insertform="ngForm" (ngSubmit)="insertdata(insertform)">
+    <label> Name : </label>
+    <input type="text" #name (ngModel)="name" name="name" id="name" class="form-class">
+    <br><br>
+    <label> Quantity : </label>
+    <input type="text" #quantity (ngModel)="quantity" name="quantity" id="quantity" class="form-class">
+    <br><br>
+    <label> Phone no : </label>
+    <input type="text" #phoneno (ngModel)="phoneno" name="phoneno" id="phoneno" class="form-class">
+    <br><br>
+    <label> Address : </label>
+    <input type="text" #address (ngModel)="address" name="address" id="address" class="form-class">
+    <br><br>
+    <button type="submit" class="btn-btn-success" value="insert">PLACE ORDER</button>
+  </form>
+  <br><br>
+  <a class="navlink" routerLink="/fetch-component">VIEW ORDER</a>
+</div>
+  <router-outlet></router-outlet>
